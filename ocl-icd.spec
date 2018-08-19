@@ -67,4 +67,4 @@ make check
 %{_libdir}/libOpenCL.so
 %{_libdir}/pkgconfig/%{name}.pc
 %{_libdir}/pkgconfig/OpenCL.pc
-%{_mandir}/man7/*
+%optional %{_mandir}/man7/*
