@@ -16,6 +16,7 @@ BuildRequires:  autoconf
 BuildRequires:  make
 BuildRequires:  libtool
 BuildRequires:  mesa-opencl-devel
+BuildRequires:	ruby rubygems
 # Once we've packaged all of this
 #Recommends:     beignet
 #Recommends:     mesa-libOpenCL
