@@ -34,7 +34,6 @@ OpenCL Installable Client Driver library
 
 %package -n %{devname}
 Summary:        Development files for %{name}
-Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:	%{libname}%{?_isa} = %{version}-%{release}
 Requires:       mesa-opencl-devel
 
