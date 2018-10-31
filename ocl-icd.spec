@@ -3,7 +3,7 @@
 
 Name:           ocl-icd
 Version:        2.2.12
-Release:        1
+Release:        2
 Summary:        OpenCL ICD (Installable Client Driver) Bindings
 
 License:        BSD
