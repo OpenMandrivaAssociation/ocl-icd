@@ -1,9 +1,11 @@
 %define libname %mklibname opencl 1
 %define devname %mklibname opencl -d
 
+%global optflags %{optflags} -O3
+
 Name:           ocl-icd
 Version:        2.2.12
-Release:        2
+Release:        3
 Summary:        OpenCL ICD (Installable Client Driver) Bindings
 
 License:        BSD
