@@ -10,29 +10,24 @@
 
 #define snapshot 20200613
 
-Name:           ocl-icd
-Version:        2.2.14
-Release:        %{?snapshot:0.%{snapshot}.}1
-Summary:        OpenCL ICD (Installable Client Driver) Bindings
-
-License:        BSD
-URL:            https://forge.imag.fr/projects/ocl-icd/
+Name:		ocl-icd
+Version:	2.2.14
+Release:	%{?snapshot:0.%{snapshot}.}2
+Summary:	OpenCL ICD (Installable Client Driver) Bindings
+License:	BSD
+URL:		https://forge.imag.fr/projects/ocl-icd/
 # See also https://github.com/OCL-dev/ocl-icd
 %if 0%{?snapshot:1}
 Source0:	https://github.com/OCL-dev/ocl-icd/archive/master.tar.gz
 %else
-Source0:        https://github.com/OCL-dev/ocl-icd/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:	https://github.com/OCL-dev/ocl-icd/archive/v%{version}/%{name}-%{version}.tar.gz
 %endif
 
-BuildRequires:  automake
-BuildRequires:  autoconf
-BuildRequires:  make
-BuildRequires:  libtool
-BuildRequires:  mesa-opencl-devel
+BuildRequires:	mesa-opencl-devel
 BuildRequires:	ruby rubygems
 # Once we've packaged all of this
 #Recommends:     beignet
-#Recommends:     mesa-libOpenCL
+Recommends:	mesa-libOpenCL
 #Recommends:     pocl
 
 %description
@@ -46,10 +41,10 @@ Group:		System/Libraries
 OpenCL Installable Client Driver library
 
 %package -n %{devname}
-Summary:        Development files for %{name}
+Summary:	Development files for %{name}
 Provides:	opencl-devel = %{version}-%{release}
 Requires:	%{libname}%{?_isa} = %{version}-%{release}
-Requires:       mesa-opencl-devel
+Requires:	mesa-opencl-devel
 
 %description -n %{devname}
 This package contains the development files for %{name}.
@@ -60,13 +55,13 @@ Summary:	OpenCL Installable Client Driver library
 Group:		System/Libraries
 
 %description -n %{lib32name}
-OpenCL Installable Client Driver library
+OpenCL Installable Client Driver library.
 
 %package -n %{dev32name}
-Summary:        Development files for %{name}
+Summary:	Development files for %{name}
 Requires:	%{devname} = %{EVRD}
 Requires:	%{lib32name} = %{version}-%{release}
-Requires:       devel(libMesaOpenCL)
+Requires:	devel(libMesaOpenCL)
 
 %description -n %{dev32name}
 This package contains the development files for %{name}.
