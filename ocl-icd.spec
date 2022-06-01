@@ -1,3 +1,8 @@
+# NOTE: This package is deprecated in favor of opencl-icd-loader
+# (which does the same thing, but is more actively maintained).
+# But let's keep this around for now, there may be something that
+# requires implementation details.
+
 # ocl-icd can be used by wine
 %ifarch %{x86_64}
 %bcond_without compat32
