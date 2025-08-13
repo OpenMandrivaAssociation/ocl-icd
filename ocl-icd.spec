@@ -49,7 +49,7 @@ OpenCL Installable Client Driver library
 Summary:	Development files for %{name}
 Provides:	opencl-devel = %{version}-%{release}
 Requires:	%{libname}%{?_isa} = %{version}-%{release}
-Requires:	mesa-opencl-devel
+Requires:	mesa-rusticl
 
 %description -n %{devname}
 This package contains the development files for %{name}.
@@ -66,7 +66,7 @@ OpenCL Installable Client Driver library.
 Summary:	Development files for %{name}
 Requires:	%{devname} = %{EVRD}
 Requires:	%{lib32name} = %{version}-%{release}
-Requires:	devel(libMesaOpenCL)
+#Requires:	devel(libMesaOpenCL)
 
 %description -n %{dev32name}
 This package contains the development files for %{name}.
