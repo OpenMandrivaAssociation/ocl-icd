@@ -16,7 +16,7 @@
 #define snapshot 20200613
 
 Name:		ocl-icd
-Version:	2.3.2
+Version:	2.3.3
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	OpenCL ICD (Installable Client Driver) Bindings
 License:	BSD
@@ -28,11 +28,11 @@ Source0:	https://github.com/OCL-dev/ocl-icd/archive/master.tar.gz
 Source0:	https://github.com/OCL-dev/ocl-icd/archive/v%{version}/%{name}-%{version}.tar.gz
 %endif
 
-BuildRequires:	mesa-opencl-devel
+BuildRequires:	mesa-rusticl
 BuildRequires:	ruby rubygems
 # Once we've packaged all of this
 #Recommends:     beignet
-Recommends:	mesa-libOpenCL
+#Recommends:	mesa-libOpenCL
 #Recommends:     pocl
 
 %description
