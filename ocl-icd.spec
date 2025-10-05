@@ -16,7 +16,7 @@
 #define snapshot 20200613
 
 Name:		ocl-icd
-Version:	2.3.3
+Version:	2.3.4
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	OpenCL ICD (Installable Client Driver) Bindings
 License:	BSD
