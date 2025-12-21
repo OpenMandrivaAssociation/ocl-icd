@@ -28,6 +28,11 @@ Source0:	https://github.com/OCL-dev/ocl-icd/archive/master.tar.gz
 Source0:	https://github.com/OCL-dev/ocl-icd/archive/v%{version}/%{name}-%{version}.tar.gz
 %endif
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	mesa-rusticl
 BuildRequires:	ruby rubygems
 # Once we've packaged all of this
